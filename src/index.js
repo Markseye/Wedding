@@ -10,7 +10,7 @@ import Party from './containers/wedding_party';
 import Story from './containers/story';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
   	<Switch>
       <Route exact path="/" component={App} />
       <Route path="/details" component={Details} />

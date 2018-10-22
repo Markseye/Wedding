@@ -16,10 +16,6 @@ import marilyn1 from "../../images/marilyn1.PNG";
 import nat from "../../images/nat2.PNG";
 import nat1 from "../../images/nat1.jpg";
 
-const handleHover = () => {
-	
-}
-
 export default class Bridesmaids extends Component {
 	defaultState = {
 		img: "formal"
@@ -73,18 +69,6 @@ const girls = { Jaime, Natalie, Allie, Casey, Kara, Marilyn, Bri, Olivia };
 let allDetails = [];
 
 let girl
- // {for (girl in girls) {
- // 	let girlInfo = girls[girl];
-	// allDetails.push(
-	// <li key={girlInfo.name}>
-	// 	<h2>{girlInfo.name}</h2>
-	// 	<div onMouseOver={handleHover(girlInfo.images)}></div>
-	// 	<p>{girlInfo.blurb}</p>
-	// </li>
-	// )
- // }}
-
- // onMouseOver={e => (e.currentTarget.src = `${allie1}`)} onMouseOut={e => (e.currentTarget.src = `${allie}`)}
 
 Object.entries(girls).forEach(([girl, values]) => {
 	let styles = {
@@ -96,7 +80,7 @@ Object.entries(girls).forEach(([girl, values]) => {
   };
 	allDetails.push(<li className="people-info-item" key={values.name}>
 		<h2>{values.name}</h2>
-		<img className="circle" style={styles} src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+		<img alt="bridesmaid"className="circle" style={styles} src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
 		{ values.title ? <h4>{values.title}</h4> : ""}
 		<p className="people-info-paragraph">{values.blurb}</p>
 	</li>)

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 export default class Dropdown extends Component {
   render() {
@@ -16,14 +15,8 @@ const dropdownLinks = {};
 dropdownLinks["Home"] = "/";
 dropdownLinks["Details"] = "/details";
 dropdownLinks["Wedding Party"] = "/weddingparty";
-// dropdownLinks["Our Story"] = "/ourstory";
 dropdownLinks["Registry"] = "/registry";
-console.log(dropdownLinks);
 
-//add link
-
-// Object.entries(obj).forEach(
-//     ([key, value]) => {
 const pageLinks = Object.entries(dropdownLinks).map(
   ([page, link]) => {
   return (

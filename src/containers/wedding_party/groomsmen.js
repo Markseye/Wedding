@@ -53,7 +53,7 @@ const James = { name: "James Mezzadri",
 								blurb: "James is one of Mark's Villanova friends and the husband of Katherine's Maid of Honor, Jaime. just based on the shear number of hours they have spent together as Villanova Electrical Engineering Student's During junior and senior year, Mark would most likley be found at James' trying to wrap his head around our homework or waiting for James to figure out what was going on."}
 const Ronnie = { name: "Ronnie Weiss",
 								 images: {formal: ron, funny: ron1},
-								 blurb: "Ronnie is one of Mark's Villanova's friends who was his first west coast friend. Being from the bubble of Delaware County, knowing people from Las Vegas was unheard of. Mark and Ronnie were pretty close throughout college, but became even better friends post-graduation. Before moving to NYC, Mark would visit and sleep on Ronnie\'s couch, eventually deciding to the make the move after a few long weekends."}
+								 blurb: "Ronnie is one of Mark's Villanova's friends who was his first west coast friend. Being from the bubble of Delaware County, knowing people from Las Vegas was unheard of. Mark and Ronnie were pretty close throughout college, but became even better friends post-graduation. Before moving to NYC, Mark would visit and sleep on Ronnie's couch, eventually deciding to the make the move after a few long weekends."}
 const Marc = { name: "Marc Pierangelli",
 							 images: {formal: p, funny: p1},
 							 blurb: "Marc (P) is one of Mark's oldest friend's from high school. He spells his name differently (the wrong way), but we still let him hang out with his. He's the first guy to hand you a coozid for your beer and then be there to talk to you about anything. He's great with parent's and pretty much any family party. He's also a loving a father to his veru cute daughter, Paige."}
@@ -79,7 +79,7 @@ Object.entries(guys).forEach(([guy, values]) => {
   };
 	allDetails.push(<li className="people-info-item" key={values.name}>
 		<h2>{values.name}</h2>
-		<img className="circle" style={styles} src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+		<img alt="groomsmen" className="circle" style={styles} src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
 		{ values.title ? <h4>{values.title}</h4> : ""}
 		<p className="people-info-paragraph">{values.blurb}</p>
 	</li>)

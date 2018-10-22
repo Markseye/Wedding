@@ -25,22 +25,22 @@ export default class Details extends Component {
       <ul className="details-list">
         <li className="details-list-item">
           <div className="details-list-item-title"> Where </div>
-          <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=John+James+Audubon+Center+at+Mill+Grove">
-            <img className="details-icons wedding-icon" src={wedding_rings} />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=John+James+Audubon+Center+at+Mill+Grove">
+            <img alt="rings" className="details-icons wedding-icon" src={wedding_rings} />
           </a>
           <br />John James <br /> Audubon Center
         </li>
         <li className="details-list-item">
           <div className="details-list-item-title"> When </div>
-          <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnFhaW01cXVtaTVhaGE5ODNxcGFkdnNmazQgbWFyay5pb2FubmlkaXNAbQ&amp;tmsrc=mark.ioannidis%40gmail.com">
-            <img className="details-icons calendar-icon" src={calendar} />
+          <a target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnFhaW01cXVtaTVhaGE5ODNxcGFkdnNmazQgbWFyay5pb2FubmlkaXNAbQ&amp;tmsrc=mark.ioannidis%40gmail.com">
+            <img alt="calendar" className="details-icons calendar-icon" src={calendar} />
           </a>
           <Countdown date={new Date()} />
         </li>
         <li className="details-list-item">
           <div className="details-list-item-title"> Lodging </div>
-          <a target="_blank" href='https://doubletree3.hilton.com/en/hotels/pennsylvania/desmond-hotel-malvern-a-doubletree-by-hilton-PHLMVDT/index.html'>
-            <img className="details-icons hotel-icon" src={hotel} />
+          <a target="_blank" rel="noopener noreferrer" href='https://doubletree3.hilton.com/en/hotels/pennsylvania/desmond-hotel-malvern-a-doubletree-by-hilton-PHLMVDT/index.html'>
+            <img alt="lodging" className="details-icons hotel-icon" src={hotel} />
           </a><br /> The Desmond<br /><b>Promo code: HYD</b>
         </li>
       </ul>
