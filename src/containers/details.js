@@ -41,7 +41,7 @@ export default class Details extends Component {
           <div className="details-list-item-title"> Lodging </div>
           <a target="_blank" rel="noopener noreferrer" href='https://doubletree3.hilton.com/en/hotels/pennsylvania/desmond-hotel-malvern-a-doubletree-by-hilton-PHLMVDT/index.html'>
             <img alt="lodging" className="details-icons hotel-icon" src={hotel} />
-          </a><br /> The Desmond<br /><b>Promo code: HYD</b>
+          </a><br /> The Desmond Hotel<br /><b>Promo code: HYD</b>
         </li>
       </ul>
       <div className={ this.state.isOpen ? "chevron expanded": "chevron"} onClick={this.handleClick}>
@@ -56,7 +56,7 @@ export default class Details extends Component {
 }
 
 const additionalDetails = <div><b>
-                          Both Ceremony and reception will be held at The John James Audubon Center.
+                          Both ceremony and reception will be held at the John James Audubon Center.
                           <ul>
                           <u>Ceremony</u>
                           <li>Start Time: 5:15 PM</li>
@@ -68,7 +68,7 @@ const additionalDetails = <div><b>
                           <li>Time: After the Reception</li>
                           </ul>
                           <ul><u>Transportation</u>
-                          <li>There will be a shuttle running from the Desmond Hotel to the Ceremony Location
-                          and back after the reception ends. Times are TBD</li>
+                          <li>There will be a shuttle running from The Desmond Hotel to the ceremony location
+                          and back after the reception ends. Times are TBD.</li>
                           </ul></b>
                           </div>;
