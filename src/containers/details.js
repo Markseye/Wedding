@@ -21,7 +21,8 @@ export default class Details extends Component {
       <Hamburger /> 
       <div className="Details">
         <div className="details-header">Details</div>
-      <div className={this.state.isOpen? "details-list-wrapper-expanded" : "detail-list-wrapper"}>
+      </div>
+      <div className={this.state.isOpen? "detail-list-wrapper details-list-wrapper-expanded" : "detail-list-wrapper"}>
       <ul className="details-list">
         <li className="details-list-item">
           <div className="details-list-item-title"> Where </div>
@@ -47,8 +48,7 @@ export default class Details extends Component {
       <div className={ this.state.isOpen ? "chevron expanded": "chevron"} onClick={this.handleClick}>
         &rang;
       </div>
-      { this.state.isOpen ? additionalDetails : null }
-      </div>
+        { this.state.isOpen ? additionalDetails : null }
       </div>
     </div>
     );

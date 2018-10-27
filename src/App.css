@@ -39,11 +39,8 @@ ul {
     background-size: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .circle {
-    width: 75px;
-    height: 75px;
-  }
+.registry-circle {
+  background: rgb(124, 124, 124, 0.3);
 }
 
 .circle:hover {
@@ -113,6 +110,11 @@ ul {
 .detail-list-wrapper {
   background: rgb(124, 124, 124, 0.3);
   padding: 0 20px;
+  width: 40%;
+  top: 12%;
+  left: 25%;
+  position: absolute;
+  text-align: center;
 }
 
 .details-list-wrapper-expanded {
@@ -154,10 +156,10 @@ ul {
 }
 
 .details-expanded {
-  padding-top: 10px;
   overflow-y: scroll;
   max-height: 300px;
   box-sizing: content-box;
+  width: 100%;
 }
 
 ::-webkit-scrollbar { 
@@ -350,6 +352,38 @@ hr {
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background: rgb(124, 124, 124, 0.3);
+  }
+
+  .registry-items {
+    display: grid;
+    padding: 0;
+  }
+
+  .detail-list-wrapper {
+    width: 80%;
+    left: 5%;
+  }
+
+  .details-expanded {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: 140px;
+    box-sizing: content-box;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2.5px;
+  }
 }
 
 @font-face {
