@@ -41,7 +41,7 @@ export default class Details extends Component {
           <div className="details-list-item-title"> Lodging </div>
           <a target="_blank" rel="noopener noreferrer" href='https://doubletree3.hilton.com/en/hotels/pennsylvania/desmond-hotel-malvern-a-doubletree-by-hilton-PHLMVDT/index.html'>
             <img alt="lodging" className="details-icons hotel-icon" src={hotel} />
-          </a><br /> The Desmond Hotel<br /><b>Promo code: HYD</b>
+          </a><br /> The Desmond <br />Hotel<br /><b>Promo code: HYD</b>
         </li>
       </ul>
       <div className={ this.state.isOpen ? "chevron expanded": "chevron"} onClick={this.handleClick}>
@@ -55,13 +55,19 @@ export default class Details extends Component {
   }
 }
 
-const additionalDetails = <div><b>
-                          Both ceremony and reception will be held at the John James Audubon Center.
+const additionalDetails = <div className="details-expanded"wrap="virtual"><b>
+                          Both ceremony and reception will be held at the John James Audubon Center in Audubon, PA.
                           <ul>
                           <u>Ceremony</u>
+                          <li>September 28, 2019</li>
                           <li>Start Time: 5:15 PM</li>
                           <li>Cocktail Hour: 6:00 PM - 7:00 PM</li>
                           <li>Reception: 7:00 - 11:00 PM</li>
+                          </ul>
+                          <ul>
+                          <u>Hotel</u>
+                          <li>The Desmond Hotel</li>
+                          <li>Malvern, PA</li>
                           </ul>
                           <ul><u>After Party</u>
                           <li>Location: The Deck at the Desmond</li>

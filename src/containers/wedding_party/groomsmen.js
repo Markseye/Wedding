@@ -9,7 +9,7 @@ import eli from "../../images/eli.jpg";
 import eli1 from "../../images/eli.PNG";
 import james from "../../images/james.PNG";
 import james1 from "../../images/james1.PNG";
-import john from "../../images/john.PNG";
+import john from "../../images/john2.png";
 import john1 from "../../images/john1.jpg";
 import justin from "../../images/justin.jpg";
 import justin1 from "../../images/justin1.jpg";
@@ -42,7 +42,7 @@ const John = { title: "Best Man",
 const Justin = { name: "Justin Hyde",
 								 images: {formal: justin,
 								 funny: justin1},
-								 blurb: "Justin is Katherine's older (and only) brother. Mark was nervous to first meet him, but he's been supportive of Mark since the beginning and has made his transition into the family that much easier (even though he is a Cowboys fan)."}
+								 blurb: "Justin is Katherine's older (and only) brother. Mark was nervous to first meet him, but he's been supportive of Mark since the beginning and has made his transition into the family that much easier (even though he is a Cowboys fan). After all these years, Mark sees Justin as his own brother and always enjoys his company."}
 const Nick = { name: "Nick Busillo",
 							 images: {formal: bus, funny: bus1},
 							 blurb: "Nick has been friends with Mark ever since the summer of high school graduation, when Mark stole his bed at 103 Victoria Lane. Bus has been following him ever since, even joining Mark at StreetEasy to only be a floor away every day at work."}
@@ -54,15 +54,15 @@ const James = { name: "James Mezzadri",
 const Ronnie = { name: "Ronnie Weiss",
 								 images: {formal: ron, funny: ron1},
 								 blurb: "Ronnie is also one of Mark's Villanova's friends, and his first west coast friend. For Mark, being from the bubble of Delaware County, knowing people from Las Vegas was unheard of. Mark and Ronnie were close throughout college, but became even better friends post-graduation. Before moving to NYC, Mark would visit and sleep on Ronnie's couch, eventually deciding to make the move after a few (long and late) weekends."}
-const Marc = { name: "Marc Pierangelli",
+const Marc = { name: "Marc Pierangeli",
 							 images: {formal: p, funny: p1},
-							 blurb: "Marc (a.k.a. \"P\") is one of Mark's oldest friends from high school. He spells his name differently (the wrong way), but we still let him hang out with his. He's the first guy to hand you a koozie for your beer and then stick around to talk to you about anything. He's also a loving a father to his very cute daughter, Paige."}
+							 blurb: "Marc (a.k.a. \"P\") is one of Mark's oldest friends from high school. He spells his name differently (the wrong way), but we still let him hang out with us. He's the first guy to hand you a koozie for your beer and then stick around to talk to you about anything. He's also a loving father to his very cute daughter, Paige."}
 const Crawford = { name: "Crawford Clarke",
 									 images: {formal: craw, funny: craw1},
 									 blurb: "Crawford and Mark met freshman year at Villanova. Even though he lived in a different dorm and is a Giants fan, they quickly bonded over music. They have been close ever since and ended up joining the same fraternity, which only continued to make them closer. Crawford even introduced Mark to his favorite Philadelphia bar in NYC, Wogies (which is now a staple)."}
 const Dylan = { name: "Dylan Carroll",
 								images: {formal: dyl, funny: dyl1},
-								blurb: "Dylan was also part of Mark's fraternity at Villanova. They had always been close, but became much closer after Mark moved to NYC. So close in fact, that Dylan is basically Katherine's second boyfriend, since they work only a block away from each other and grab coffee on just about a weekly basis. He is always down to \"cruise the block\", grab some espresso, and go out dancing."}
+								blurb: "Dylan was also part of Mark's fraternity at Villanova. They had always been close, but became much closer after Mark moved to NYC. So close in fact, that Dylan is basically Katherine's second boyfriend, since they work only a block away from each other and grab coffee on a weekly basis. He is always down to \"cruise the block\", grab some espresso, and go out dancing."}
 
 const guys = { John, Justin, Nick, Eli, James, Ronnie, Marc, Crawford, Dylan };
 
@@ -70,17 +70,10 @@ let allDetails = [];
 // let guy;
 
 Object.entries(guys).forEach(([guy, values]) => {
-	let styles = {
-    margin: '20px',
-    width: '250px',
-    height: '250px',
-    // backgroundImage: `url(${allie})`,
-    backgroundSize: 'center'
-  };
 	allDetails.push(<li className="people-info-item" key={values.name}>
 		<h2>{values.name}</h2>
 		<img alt="groomsmen" 
-		className="circle" style={styles} src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+		className="circle" src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
 		{ values.title ? <h4>{values.title}</h4> : ""}
 		<p className="people-info-paragraph">{values.blurb}</p>
 	</li>)
