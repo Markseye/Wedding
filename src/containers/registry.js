@@ -8,12 +8,11 @@ export default class Registry extends Component {
 
 	render(){
 		return(
-			<div>
+			<div className="App">
 				<Hamburger />
 				<div className="registry">
-					<div className="splash-name registry-title">Coming Soon!</div>
+					<div className="registry-splash-name registry-title">Coming Soon!</div>
 						<ul className="registry-items">
-						<li><img alt="pb" className="circle registry-circle" src={pb} /></li>
 						<li><img alt="cnb" className="circle registry-circle" src={cnb} /></li>
 						<li><img alt="bbb" className="circle registry-circle" src={bbb} /></li>
 						</ul>

@@ -15,7 +15,7 @@ export default class WeddingInfo extends Component {
   
   render() {
 	return(
-    <div className='splash-details'>
+    <div className='pane1'>
 	    <div className='splash-name'>
 		    Mark & Kat
       </div>

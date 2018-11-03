@@ -18,8 +18,8 @@ export default class Details extends Component {
   render() {
     return (
     <div className="Details-background">
-      <Hamburger /> 
-      <div className="Details">
+      <Hamburger />
+       <div className="Details">
         <div className="details-header">Details</div>
       </div>
       <div className={this.state.isOpen? "detail-list-wrapper details-list-wrapper-expanded" : "detail-list-wrapper"}>
@@ -33,7 +33,7 @@ export default class Details extends Component {
         </li>
         <li className="details-list-item">
           <div className="details-list-item-title"> When </div>
-          <a target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NnFhaW01cXVtaTVhaGE5ODNxcGFkdnNmazQgbWFyay5pb2FubmlkaXNAbQ&amp;tmsrc=mark.ioannidis%40gmail.com">
+          <a target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnFhaW01cXVtaTVhaGE5ODNxcGFkdnNmazQgMzhvZzRkZDNxajlwOGdscTJmaWw3NXZvcTBAZw&tmsrc=38og4dd3qj9p8glq2fil75voq0%40group.calendar.google.com">
             <img alt="calendar" className="details-icons calendar-icon" src={calendar} />
           </a>
           <Countdown date={new Date()} />

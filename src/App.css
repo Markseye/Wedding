@@ -10,11 +10,32 @@ ul {
   padding-left: 0;
 }
 
+h2, h3 {
+  font-family: Pacifico;
+  margin: 0;
+}
+
+h4 {
+  font-family: Pacifico;
+  margin: 0;
+}
+
 .App {
   display: flex;
   height: 100%;
   margin: 0;
 }
+
+.home-App {
+  display: table;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+/*.pane2 {
+  display: table-cell;
+}*/
 
 .App-header {
   background-color: #222;
@@ -28,15 +49,19 @@ ul {
 }
 
 .circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 0;
-    margin: 20px;
-    width: 250px;
-    height: 250px;
-    background-size: center;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 0;
+/*    margin: 20px;*/
+  width: 250px;
+  height: 250px;
+  background-size: center;
+}
+
+.people-circle {
+  padding-top: 20px;
+  width: 220px;
+  height: 220px;
 }
 
 .registry-circle {
@@ -44,14 +69,32 @@ ul {
 }
 
 .circle:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transform: scale(1.1)
+}
+
+.new-people-info {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.new-people-info-item {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 300px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px .2em rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
 }
 
 .people-info {
   height: 100%;
   width: 100%;
   text-align: center;
+
 }
 
 .people-info-item {
@@ -74,12 +117,42 @@ ul {
   background-color: #e0dede;
 }
 
-.all-people {
+.greyBackground{
+  background-color: #e0dede;
+}
+
+.new-all-people {
   width: 100%;
 }
 
 .person-info {
   height: 100%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 99;
+  top: 3%;
+  left: 10%;
+  width: 75%;
+  height: 95%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+}
+
+.modalTextContainer {
+  padding: 20px;
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .Details-background {
@@ -122,18 +195,21 @@ ul {
   padding: 0 20px 5px;
 }
 
-// media queries to change font for whole details page if mobile
-// expand box width on mobile too maybe 75%?
-// on cell, move items to sinlge per row rather than flex. is it column?
 .details-list-item {
+  font-family: helvetica;
   width: 30%;
+  font-variant: petite-caps;
 }
 
 .details-list-item-title {
+  font-family: Pacifico;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+.padding10 {
+  padding: 10px 0;
+}
 .details-icons {
   height: 50px;
   width: 50px;
@@ -153,6 +229,7 @@ ul {
   color: black;
   font-family: Pacifico;
   text-align: center;
+  padding: 10px 0 30px;
 }
 
 .details-expanded {
@@ -195,23 +272,55 @@ ul {
   display: inline-block;
   cursor: pointer;
   z-index: 2;
-  position: absolute;
+/*  position: absolute;
   height: 200px;
-  width: 150px;
+  width: 150px;*/
   margin: 2.5px 0;
+  width: 150px !important;
+  display: table-row;
 }
 
 .dropdown-link {
-  width: 120px;
   margin: 2.5px 0;
-  border-radius: 25px;
   position: relative;
   z-index: 1;
   font-weight: bold;
 }
 
 .dropdown-link-container {
+  width: 100%;
   margin: 0;
+}
+
+.howWeMet {
+  text-align: center;
+  color: #101051;
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  text-align: center;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+.tab-content {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  padding: 0 10%;
 }
 
 .splash-left-window {
@@ -229,17 +338,97 @@ ul {
   box-sizing: border-box;
 }
 
+.galleryImage{
+  width: 300px;
+  height: 250px;
+  list-style: none;
+  display: inline;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10%;
+}
+
+.column {
+  flex: 16.5%;
+  padding: 0 2px;
+  justify-content: space-between;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 175px;
+  width: 175px;
+}
+
+.landingpic{
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: auto;
+    width: 25%;
+    flex-direction: row wrap;
+    min-height: 200px;
+    min-width: 300px;
+    border:solid;
+    border-color: black;
+}
+
+.pane1 {
+    background-image: url("./images/mark-katherine-9496.jpg");
+    background-size: cover;
+    background-position: 80% bottom;
+    background-repeat: no-repeat;
+    /*display: flex;*/
+    display: block;
+    text-align: center;
+    /*padding: 30% 20% 0 0;*/
+    justify-content: center;
+/*    align-content: center;
+    align-items: center;*/
+    /*justify-content: center;*/
+    /*margin-top: inherit;*/
+    height: 100%;
+    /*position: initial;*/
+}
+
+.pane2 {
+    display: flex;
+    width:100%;
+
+    /*background: url(bg_images/labtop.jpg);*/
+    /*background-size: cover;*/
+    height: 100%;
+}
+
+.pane2Content{
+    margin-left: 10%;
+    font-family: monospace, Cursive, helvetica, arial, sans-serif;
+    font-size: 8vh;
+    margin-top: 50vh;
+    background: rgba(255,255,255, .7);
+    position: absolute;
+}
+
 .splash-details {
   display: block;
   text-align: center;
   left: 20%;
   top: 30%;
   justify-content: center;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .story {
   text-align: center;
+  padding-left: 10%;
+  width: 80%;
+/*  background: url(bg_images/labtop.jpg);
+  background-size: cover;*/
+  height: 100%;
 }
 
 hr {
@@ -254,12 +443,34 @@ hr {
   margin: .2em 0;
   padding: 0; 
 }
+/*
+ul {
+  white-space: nowrap;
+}*/
+
+.imgGallery {
+  width: 100%;
+  /*white-space: nowrap;*/
+  padding: 0 10%;
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: center;
+}
 
 .splash-name {
   font-size: 36px;
   font-family: Pacifico;
   color: #101051;
+  padding: 15% 0 0 0;
 }
+
+.registry-splash-name {
+  font-size: 36px;
+  font-family: Pacifico;
+  color: #101051;
+  padding: 0% 0 0 0;
+}
+
 
 .splash-date {
   font-family: Pacifico;
@@ -299,19 +510,85 @@ hr {
   border-width: 1.1px;
 }
 
-.hamburger-container {
-  display: inline-block;
-  cursor: pointer;
-  margin: 5px 5px;
-  z-index: 1;
+.topNav {
+  height: 40px;
+  max-height: 40px; 
+  margin-top: 0px;
+  background-color: (0,0,0 0.0);
+  width: 100%;
+  padding-left: 0;
+  padding-top: .7%;
+  padding-bottom: .7%;
+  z-index: 99 !important;
+}
+
+.topNav-links-wrapper {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.topNav a{
+  display: block;
+  color: #101051;
+}
+
+.topNav-item{
+  width: 100%;
+}
+
+.topNav-item:hover{
+    transform: scale(1.1)
+}
+
+.side-nav {
+  height: 100%;
+  width: 80px;
+  background: rgb(255, 255, 255, .85);
+  box-shadow: 0px 0 25px 0px #aaa;
+  align-content: center;
+  justify-content: space-around;
+  display: flex;
+  z-index: 99 !important;
   position: fixed;
 }
 
+.modal-close {
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+}
+
+.modal-image {
+  object-fit: cover;
+  object-position: 0 0;
+  text-align: center;
+  max-width: 500px;
+  max-height: 350px;
+  background-size: center;
+  padding-top: 20px;
+}
+
+.hamburger-container {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 0px;
+  z-index: 1;
+  height: 25px;
+}
+
 .bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 3.5px;
+  width: 50px;
+  height: 5.5px;
   background-color: #101051;
-  margin: 2.5px 0;
+  margin: 3.5px 0;
   transition: 0.4s;
   border-radius: 25px;
   position: relative;
@@ -320,9 +597,16 @@ hr {
 .party-container {
   align-items: center;
   width: 80%;
-  border-style: solid;
   left: 10%;
   position: absolute;
+  box-shadow: 0px 0 5px 0px #aaa;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.party-page {
+  background-color: #f2f3f4;
+  height: 350%;
 }
 
 .registry {
@@ -340,12 +624,28 @@ hr {
   box-sizing: border-box;
 }
 
+.Details-background {
+  background-image: url("./images/oreo.jpg");
+  background-size: cover;
+  height: 100%;
+  align-items: center;
+  background-position: 60% bottom;
+  background-repeat: no-repeat;
+}
+
+.Details {
+  width: 40%;
+  left: 25%;
+  position: absolute;
+  text-align: center;
+}
+
 .registry-title {
   left: 75%;
   position: absolute;
   font-size: 1.5em;
   font-family: Pacifico;
-  color: #7c7c7c;
+  color: #101051;
 }
 
 .registry-items {
@@ -354,12 +654,71 @@ hr {
   padding: 50px;
 }
 
+.display-none {
+  display: none
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: local('Pacifico'), url(./fonts/Pacifico/Pacifico-Regular.woff) format('woff');
+}
+
+a {
+  color: #101051;
+  text-decoration:  none;
+}
+
+a:hover{
+  font-size: 1.1em;
+}
+
 @media only screen and (max-width: 600px) {
   .circle {
     width: 100px;
     height: 100px;
     margin: 5px;
-    background: rgb(124, 124, 124, 0.3);
+  }
+
+  .tab-content {
+    width: 74%;
+    padding-left: 16%;
+  }
+
+  .story {
+    padding-left: 16%;
+    width: 74%;
+  }
+
+  .column{
+   flex: 10%;
+   padding-left: 14%;
+  }
+
+  .column img {
+    padding-top: 3px;
+    height: 230px;
+    width: 230px;
+  }
+
+  .people-circle {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+
+  .modal-image {
+    max-width: 200px;
+    max-height: 150px;
+    background-size: center;
+    padding-top: 10px;
+  }
+
+  .modalTextContainer{
+    font-size: 10px
+;  }
+
+  .details-header {
+    padding-bottom: 10px;
   }
 
   .registry-items {
@@ -376,7 +735,7 @@ hr {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    max-height: 140px;
+    max-height: 160px;
     box-sizing: content-box;
   }
 
@@ -384,18 +743,27 @@ hr {
     width: 20px;
     height: 2.5px;
   }
-}
 
-@font-face {
-  font-family: 'Pacifico';
-  src: local('Pacifico'), url(./fonts/Pacifico/Pacifico-Regular.woff) format('woff');
-}
+  .side-nav {
+    height: 100%;
+    width: 40px;
+    box-shadow: 0px 0 15px 0px #aaa;
+  }
 
-a {
-  text-decoration:  none;
-  color: #101051;
-}
+  .dropdown-link {
+    font-size: 9.5px;
+  }
 
-a:hover{
-  color: white;
+  .topNav-links-wrapper {
+    font-size: 12px;
+  }
+
+  .topNav{
+    height: 20px;
+    max-height: 20px;
+  }
+
+  .party-container {
+    margin-top: 20px;
+  }
 }

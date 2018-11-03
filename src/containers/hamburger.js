@@ -16,9 +16,11 @@ export default class Hamburger extends Component {
 
   render() {
 	  return(
-	    <div className='hamburger-container' onClick={this.handleClick}>
-	     { this.state.isToggleOn ? <Dropdown /> : hamburger }
-	    </div>
+      <div className="side-nav">
+	      <div className='hamburger-container' onClick={this.handleClick}>
+	        { this.state.isToggleOn ? <Dropdown /> : hamburger }
+	      </div>
+      </div>
 	)
   }
 }

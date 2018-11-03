@@ -27,13 +27,13 @@ export default class Bridesmaids extends Component {
 
 	render() {
 		return (
-			<div className="all-people">
+			<div className="new-all-people">
 				<div className="details-header">
-					Bridesmaids
+					Meet the Bridesmaids
 				</div>
-				<ul className="people-info">
+				<div className="new-people-info">
 					{allDetails}
-				</ul>
+				</div>
 			</div>
 		)
 	}
@@ -70,11 +70,34 @@ let allDetails = [];
 
 let girl
 
+const openModal = (img, blurb) => {
+	var modalDiv = document.createElement("div")
+	modalDiv.classList.add("modal");
+	var image = document.createElement("img");
+	image.classList.add("modal-image");
+	// image.classList.add("circle");
+	image.src = img;
+	var close = document.createElement("div")
+	var closeText = document.createTextNode("Close");
+	close.appendChild(closeText);
+	close.onclick = function () {
+    modalDiv.classList.add("display-none");
+	};
+	close.classList.add("modal-close");
+	var par = document.createElement("p");
+	par.classList.add("modalTextContainer");
+	par.innerHTML = blurb;
+	modalDiv.appendChild(close);
+	modalDiv.appendChild(image);
+	modalDiv.appendChild(par);
+	document.body.appendChild(modalDiv);
+}
+
 Object.entries(girls).forEach(([girl, values]) => {
-	allDetails.push(<li className="people-info-item" key={values.name}>
-		<h2>{values.name}</h2>
-		<img 	 className="circle" src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+	let image = values.images["formal"];
+	allDetails.push(<div className="new-people-info-item" key={values.name} onClick={openModal.bind(null, image, values.blurb)}>
+		<img alt="groomsmen" className="circle people-circle" src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+		<h3>{values.name}</h3>
 		{ values.title ? <h4>{values.title}</h4> : ""}
-		<p className="people-info-paragraph">{values.blurb}</p>
-	</li>)
+	</div>)
 });
