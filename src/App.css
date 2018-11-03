@@ -563,7 +563,7 @@ ul {
 .modal-close {
   cursor: pointer;
   color: #fff;
-  padding: 10px;
+  padding: 10.5px;
 }
 
 .modal-image {
@@ -700,6 +700,10 @@ a:hover{
     width: 230px;
   }
 
+  .modal {
+    left: 17%;
+  }
+
   .people-circle {
     width: 200px;
     height: 200px;
@@ -707,15 +711,15 @@ a:hover{
   }
 
   .modal-image {
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 275px;
+    max-height: 215px;
     background-size: center;
     padding-top: 10px;
   }
 
   .modalTextContainer{
-    font-size: 10px
-;  }
+    font-size: 13px;
+  }
 
   .details-header {
     padding-bottom: 10px;
@@ -728,7 +732,7 @@ a:hover{
 
   .detail-list-wrapper {
     width: 80%;
-    left: 5%;
+    left: 8%;
   }
 
   .details-expanded {
@@ -746,12 +750,13 @@ a:hover{
 
   .side-nav {
     height: 100%;
-    width: 40px;
+    width: 45px;
     box-shadow: 0px 0 15px 0px #aaa;
   }
 
   .dropdown-link {
-    font-size: 9.5px;
+    font-size: 11px;
+    margin: 3.5px 0;
   }
 
   .topNav-links-wrapper {
@@ -765,5 +770,6 @@ a:hover{
 
   .party-container {
     margin-top: 20px;
+    margin-left: 20px;
   }
 }
