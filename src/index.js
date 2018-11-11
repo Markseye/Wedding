@@ -11,12 +11,12 @@ import Story from './containers/story';
 import { createBrowserHistory as createHistory } from "history";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
   	<Switch>
       <Route exact path="/" component={App} />
-      <Route path={process.env.PUBLIC_URL + '/details'} component={Details} />
-      <Route path={process.env.PUBLIC_URL + '/registry'} component={Registry} />
-      <Route path={process.env.PUBLIC_URL + '/weddingparty'} component={Party} />
+      <Route path="/details" component={Details} />
+      <Route path="/registry" component={Registry} />
+      <Route path="/weddingparty" component={Party} />
     </Switch>
   </BrowserRouter>
 	, document.getElementById('root'));
