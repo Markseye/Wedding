@@ -12,10 +12,10 @@ export default class Dropdown extends Component {
 }
 
 const dropdownLinks = {};
-dropdownLinks["Home"] = "/";
-dropdownLinks["Details"] = "/details";
-dropdownLinks["Wedding Party"] = "/weddingparty";
-dropdownLinks["Registry"] = "/registry";
+dropdownLinks["Home"] =  process.env.PUBLIC_URL + "/";
+dropdownLinks["Details"] = process.env.PUBLIC_URL + "/#/details";
+dropdownLinks["Wedding Party"] = process.env.PUBLIC_URL + "/#/weddingparty";
+dropdownLinks["Registry"] = process.env.PUBLIC_URL + "/#/registry";
 
 const pageLinks = Object.entries(dropdownLinks).map(
   ([page, link]) => {
