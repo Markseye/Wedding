@@ -4,7 +4,7 @@ import mark from "../images/mark.jpg";
 import kitty from "../images/kat.PNG";
 import one from "../images/2.jpg";
 import two from "../images/3.jpg";
-import three from "../images/27.jpg";
+import three from "../images/27.PNG";
 import four from "../images/4.jpg";
 import five from "../images/5.jpg";
 import six from "../images/6.jpg";
