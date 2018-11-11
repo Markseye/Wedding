@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Tabs from './tabs';
 import mark from "../images/mark.jpg";
-import kitty from "../images/kitty.jpg";
+import kitty from "../images/kat.PNG";
 import one from "../images/2.jpg";
 import two from "../images/3.jpg";
-import three from "../images/9.jpg";
+import three from "../images/27.jpg";
 import four from "../images/4.jpg";
 import five from "../images/5.jpg";
 import six from "../images/6.jpg";
@@ -87,8 +87,8 @@ export default class Story extends Component {
         <div className="story">
           <h3> Now </h3 >
           <p>Now, Mark and Katherine live together in NYC. The wedding planning is nearly complete, mostly thanks to Katherine's organization skills and need to have
-          everything done 3 months ahead of when most couples would be just thinking about starting research. We have some odds and ends to tie up, but are so excited to
-          have all of you together to celebrate us officially starting our lives together! See you soon!
+          everything done way ahead of schedule. We are so excited to
+          have all of you together to celebrate officially starting our lives together! See you soon!
           </p>
         </div>
         </div>
@@ -101,13 +101,14 @@ const detailsInfo =
 <div className="story">
   <div>
     <h3> The proposal, as told by Mark </h3>
-    <p>When thinking about where to get engaged, it had to be somewhere that was special to us. Aruba is our favorite tropical destination and was the first
-    real vacation we had outside of the country as a couple (with James and Jaime) a few years ago. We had alread talked about going a second time together, so I thought this could be the perfect time to propose. Fast forward 10 months to March 2018, and after getting Katherine's Dad's permission that summer, and I am nervously carrying the ring in my bookbag through the airport
-    security on our way to Aruba, hoping that I don't get stopped and searched in front of Katherine explosing the plan. Luckily, I get through without any issues, and we arrive smoothly. 
+    <p>When thinking about where to get engaged, it had to be somewhere that was special to us. Aruba is our favorite tropical island and was the first
+    real vacation we had outside of the country as a couple (with James and Jaime) a few years ago. We had alread talked about going a second time together, so I thought this could be the perfect time to propose. After getting Katherine's Dad's permission that summer, fast forward to March 2018 when our second Aruba adventure began.
+    I was nervously carrying the ring through airport
+    security, hoping I didn't get stopped and searched in front of Katherine, exposing the plan. Luckily, I got through without any issues, and we arrived smoothly. 
     I knew I wanted to propose on the beach at sunset (since Aruba's sunsets are unbeatable), so on the first day I scouted out a location to propose where Jaime and James could still pop out
-    and take photos to document the moment. Luckily, I found a nice little private inlet away from most of the commotion, so I knew we had the perfect spot. Fast forward another 24-hours and it's almost sunset. In an effort to escape and start prepping, Jaime says
-    that her and James are going to meet family who just so happened to be on the island at the same time, and that they'd meet us a bit later in the evening. Katherine's gullibility fell right for this. While they were making their way
-    to the inlet to get the cameras ready, we hung back at the hotel for another 15 minutes until I suggested going for a walk on the beach while we waited for Jaime and James to return from their "time with family". Knowing Katherine,
+    and take photos to document the moment. Luckily, I found a nice little private inlet away from most of the commotion on the beach, so I knew I had found the perfect spot. Fast forward another 24-hours and it was almost sunset. In an effort to escape and start prepping, Jaime said
+    that her and James were going to meet family who just so happened to be on the island at the same time, and that they'd meet us a bit later in the evening. Katherine's gullibility fell right for this story. While they were making their way
+    to the inlet to get the cameras ready, we hung back at the hotel for another few minutes until I suggested going for a walk on the beach while we waited for Jaime and James to return from their "time with family". Knowing Katherine,
     I was fairly confident she would be all for this idea, and I was right. We walked down to the beach, hand in my pocket clasping the ring the entire time. We slowly made our way to the location, as I tried to make everything seem less suspicious. We made it down to the inlet as I got down on one knee. Katherine immediately started crying, the Mezzadri photographers popped out of the brush to capture the moment, and the rest is history...
     </p>
   </div>
