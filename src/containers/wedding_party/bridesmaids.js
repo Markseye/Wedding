@@ -96,7 +96,7 @@ const openModal = (img, blurb) => {
 Object.entries(girls).forEach(([girl, values]) => {
 	let image = values.images["formal"];
 	allDetails.push(<div className="new-people-info-item" key={values.name} onClick={openModal.bind(null, image, values.blurb)}>
-		<img alt="groomsmen" className="circle people-circle" src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
+		<img alt="bridesmaids" className="circle people-circle" src={`${values.images["formal"]}`} onMouseOver={e => (e.currentTarget.src = `${values.images["funny"]}`)} onMouseOut={e => (e.currentTarget.src = `${values.images["formal"]}`)} />
 		<h3>{values.name}</h3>
 		{ values.title ? <h4>{values.title}</h4> : ""}
 	</div>)
