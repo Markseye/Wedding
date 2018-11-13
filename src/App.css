@@ -64,13 +64,17 @@ h4 {
   height: 220px;
 }
 
+.people-circle:hover {
+  transition-duration: .5s;
+}
+
 .registry-circle {
   background: rgb(124, 124, 124, 0.3);
 }
 
 .circle:hover {
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .new-people-info {

@@ -32,7 +32,7 @@ export default class Story extends Component {
                    Neither of us knew at the time how important that decision would be. That night, I showed up to Jaime's apartment to find James, Jaime, and my blind date, Katherine. I may have only seen Katherine once or twice out before, but never had gotten up enough confidence to talk to her.
                    Luckily for me this was my opportunity. I remember one of the first things I noticed was that it didn't seem like she was wearing any makeup, which to this day is when I always say she looks the prettiest.
                    Initially, the night started with some small talk as I mostly hung out with James as Katherine and Jaime finished getting ready and catching up.
-                   As the night went on and everyone was feeling a little more comfortable (thanks to some liquid courage), the converstations between us began to flow a little easier. I remember dancing a lot and just overall both of us having a great night at Paddywhack's in downtown Philly. This night gave me enough courage to ask Katherine on our first date, which was at Kiwi Yogurt.
+                   As the night went on and everyone was feeling a little more comfortable (thanks to some liquid courage), the conversations between us began to flow a little easier. I remember dancing a lot and just overall both of us having a great night at Paddywhack's in downtown Philly. This night gave me enough courage to ask Katherine on our first date, which was at Kiwi Yogurt.
                    This led to our second date at one of Villanova's finest establishments, the PIT cafeteria, where in true college fashion I was able to get one of my fraternity pledges to give Katherine a free meal.
                    We had countless more late nights out at bars on the Main Line, sorority and fraternity functions, and many other great memories from our time in college that I look back on and treasure.
                    With the good, also comes the bad, but we managed to get through it (even when she locked me out of her apartment in the pouring rain 😂🌧️😭 )
@@ -102,7 +102,7 @@ const detailsInfo =
   <div>
     <h3> The proposal, as told by Mark </h3>
     <p>When thinking about where to get engaged, it had to be somewhere that was special to us. Aruba is our favorite tropical island and was the first
-    real vacation we had outside of the country as a couple (with James and Jaime) a few years ago. We had alread talked about going a second time together, so I thought this could be the perfect time to propose. After getting Katherine's Dad's permission that summer, fast forward to March 2018 when our second Aruba adventure began.
+    real vacation we had outside of the country as a couple (with James and Jaime) a few years ago. We had already talked about going a second time together, so I thought this could be the perfect time to propose. After getting Katherine's Dad's permission that summer, fast forward to March 2018 when our second Aruba adventure began.
     I was nervously carrying the ring through airport
     security, hoping I didn't get stopped and searched in front of Katherine, exposing the plan. Luckily, I got through without any issues, and we arrived smoothly. 
     I knew I wanted to propose on the beach at sunset (since Aruba's sunsets are unbeatable), so on the first day I scouted out a location to propose where Jaime and James could still pop out
