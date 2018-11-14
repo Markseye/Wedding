@@ -17,6 +17,9 @@ import twelve from "../images/22.jpg";
 import thirteen from "../images/24.jpg";
 import fourteen from "../images/26.jpg";
 import fifteen from "../images/15.jpg";
+import proposal from "../images/18.jpg";
+import proposal1 from "../images/proposal1.jpg";
+import proposal2 from "../images/proposal2.jpg";
 
 export default class Story extends Component {
   render() {
@@ -111,6 +114,11 @@ const detailsInfo =
     to the inlet to get the cameras ready, we hung back at the hotel for another few minutes until I suggested going for a walk on the beach while we waited for Jaime and James to return from their "time with family". Knowing Katherine,
     I was fairly confident she would be all for this idea, and I was right. We walked down to the beach, hand in my pocket clasping the ring the entire time. We slowly made our way to the location, as I tried to make everything seem less suspicious. We made it down to the inlet as I got down on one knee. Katherine immediately started crying, the Mezzadri photographers popped out of the brush to capture the moment, and the rest is history...
     </p>
+  </div>
+  <div className= "proposal-images-container" >
+    <img className="proposal-image" src={proposal} />
+    <img className="proposal-image" src={proposal2} />
+    <img className="proposal-image" src={proposal1} />
   </div>
 </div>
 

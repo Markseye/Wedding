@@ -42,7 +42,7 @@ export default class Details extends Component {
           <div className="details-list-item-title"> Lodging </div>
           <a target="_blank" rel="noopener noreferrer" href='https://doubletree3.hilton.com/en/hotels/pennsylvania/desmond-hotel-malvern-a-doubletree-by-hilton-PHLMVDT/index.html'>
             <img alt="lodging" className="details-icons hotel-icon" src={hotel} />
-          </a><br /> The Desmond <br />Hotel<br /><b>Promo code: HYD</b>
+          </a><br /> The Desmond <br />Hotel<br /><b>Group code: HYD</b>
         </li>
       </ul>
       <div className={ this.state.isOpen ? "chevron expanded": "chevron"} onClick={this.handleClick}>
