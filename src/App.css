@@ -342,6 +342,10 @@ h4 {
   padding: 0 10%;
 }
 
+.tab-content {
+  line-height: 19px;
+}
+
 .splash-left-window {
   background-image: url("./images/mark-katherine-9496.jpg");
   background-size: cover;
