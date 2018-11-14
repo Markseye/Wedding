@@ -2,8 +2,12 @@ html, body, #root {
   height: 100%;
 }
 
-a {
+a, p {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  font-weight: 600;
 }
 
 li {
@@ -184,7 +188,7 @@ h4 {
 .details-list{
   width: 100%;
   padding: 20px 0px 10px 0;
-  font-family: cursive;
+  font-family: 'Source Sans Pro';
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -206,9 +210,9 @@ h4 {
 }
 
 .details-list-item {
-  font-family: helvetica;
+  font-family: 'Source Sans Pro', helvetica;
   width: 30%;
-  font-variant: petite-caps;
+  font-weight: bold;
 }
 
 .details-list-item-title {
@@ -247,6 +251,7 @@ h4 {
   max-height: 300px;
   box-sizing: content-box;
   width: 100%;
+  font-family: 'Source Sans Pro';
 }
 
 ::-webkit-scrollbar { 
