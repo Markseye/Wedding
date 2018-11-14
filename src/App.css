@@ -737,7 +737,7 @@ a:hover{
   }
 
   .row {
-    margin-left: 10%;
+    margin-left: 4%;
   }
 
   .story {
@@ -758,6 +758,7 @@ a:hover{
 
   .modal {
     left: 17%;
+    overflow: hidden;
   }
 
   .people-circle {
