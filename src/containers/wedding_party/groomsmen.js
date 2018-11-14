@@ -4,7 +4,7 @@ import bus1 from "../../images/bus1.PNG";
 import craw from "../../images/craw.PNG";
 import craw1 from "../../images/craw1.jpg";
 import dyl from "../../images/dyl.PNG";
-import dyl1 from "../../images/dyl1.jpg";
+import dyl1 from "../../images/dyl2.jpg";
 import eli from "../../images/eli.jpg";
 import eli1 from "../../images/eli.PNG";
 import james from "../../images/james.PNG";
