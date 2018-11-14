@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Tabs from './tabs';
 import mark from "../images/mark.jpg";
-import kitty from "../images/kat.PNG";
+import kitty from "../images/kat.png";
 import one from "../images/2.jpg";
 import two from "../images/3.jpg";
 import three from "../images/27.PNG";
@@ -38,8 +38,8 @@ export default class Story extends Component {
                    As the night went on and everyone was feeling a little more comfortable (thanks to some liquid courage), the conversations between us began to flow a little easier. I remember dancing a lot and just overall both of us having a great night at Paddywhack's in downtown Philly. This night gave me enough courage to ask Katherine on our first date, which was at Kiwi Yogurt.
                    This led to our second date at one of Villanova's finest establishments, the PIT cafeteria, where in true college fashion I was able to get one of my fraternity pledges to give Katherine a free meal.
                    We had countless more late nights out at bars on the Main Line, sorority and fraternity functions, and many other great memories from our time in college that I look back on and treasure.
-                   With the good, also comes the bad, but we managed to get through it (even when she locked me out of her apartment in the pouring rain 😂🌧️😭 )
-                   and it only made us stronger, getting us through years of a long distance relationship and being apart for months at a time. This all led up to this moment, and I wouldn't have it any other way. I love you, Katherine 😘😘.
+                   With the good, also comes the bad, but we managed to get through it (even when she locked me out of her apartment in the pouring rain  <span role="img" aria-label="Joy">😂</span><span role="img" aria-label="Rain">🌧️</span><span role="img" aria-label="Cry">😭</span> )
+                   and it only made us stronger, getting us through years of a long distance relationship and being apart for months at a time. This all led up to this moment, and I wouldn't have it any other way. I love you, Katherine <span role="img" aria-label="Kiss">😘</span><span role="img" aria-label="kiss1">😘</span>.
                </p>
             </div>
             <div label="Her Version">
@@ -56,29 +56,29 @@ export default class Story extends Component {
         <div className="pane2">
           <div className="row">
             <div className="column">
-              <img src={one} />
-              <img src={two} />
-              <img src={three} />
+              <img alt="gallery-img" src={one} />
+              <img alt="gallery-img" src={two} />
+              <img alt="gallery-img" src={three} />
             </div>
             <div className="column">
-              <img src={four} />
-              <img src={five} />
-              <img src={six} />
+              <img alt="gallery-img" src={four} />
+              <img alt="gallery-img" src={five} />
+              <img alt="gallery-img" src={six} />
             </div>
             <div className="column">   
-              <img src={seven} />
-              <img src={eight} />
-              <img src={nine} />
+              <img alt="gallery-img" src={seven} />
+              <img alt="gallery-img" src={eight} />
+              <img alt="gallery-img" src={nine} />
             </div>
             <div className="column">
-              <img src={ten} />
-              <img src={eleven} />
-              <img src={twelve} />
+              <img alt="gallery-img" src={ten} />
+              <img alt="gallery-img" src={eleven} />
+              <img alt="gallery-img" src={twelve} />
             </div>
             <div className="column">
-              <img src={thirteen} />
-              <img src={fourteen} />
-              <img src={fifteen} />
+              <img alt="gallery-img" src={thirteen} />
+              <img alt="gallery-img" src={fourteen} />
+              <img alt="gallery-img" src={fifteen} />
             </div>
           </div>
         </div>
@@ -116,9 +116,9 @@ const detailsInfo =
     </p>
   </div>
   <div className= "proposal-images-container" >
-    <img className="proposal-image" src={proposal} />
-    <img className="proposal-image" src={proposal2} />
-    <img className="proposal-image" src={proposal1} />
+    <img alt="proposal-img" className="proposal-image" src={proposal} />
+    <img alt="proposal-img" className="proposal-image" src={proposal2} />
+    <img alt="proposal-img" className="proposal-image" src={proposal1} />
   </div>
 </div>
 

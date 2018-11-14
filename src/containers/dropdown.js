@@ -4,7 +4,7 @@ export default class Dropdown extends Component {
   render() {
     return (
       <div className="dropdown">
-      	<div>X</div>
+      	<div><a>X</a></div>
       	{dropLinks}
       </div>
     );

@@ -16,7 +16,7 @@ export default class Hamburger extends Component {
 
   render() {
 	  return(
-      <div className="side-nav">
+      <div className={this.state.isToggleOn ? "side-nav-open": "side-nav"}>
 	      <div className='hamburger-container' onClick={this.handleClick}>
 	        { this.state.isToggleOn ? <Dropdown /> : hamburger }
 	      </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Groomsmen from './wedding_party/groomsmen';
 import Bridesmaids from './wedding_party/bridesmaids';
-import TopNav from './top_nav';
 import Hamburger from './hamburger';
 
 export default class Party extends Component {

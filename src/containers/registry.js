@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Hamburger from './hamburger';
-import pb from "../images/pb.png";
 import cnb from "../images/cnb.png";
 import bbb from "../images/bbb.png";
 

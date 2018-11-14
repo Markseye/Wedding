@@ -68,8 +68,6 @@ const girls = { Jaime, Marilyn, Natalie, Allie, Casey, Kara, Bri, Olivia };
 // need to append each to original
 let allDetails = [];
 
-let girl
-
 const openModal = (img, blurb) => {
 	var modalDiv = document.createElement("div")
 	modalDiv.classList.add("modal");
