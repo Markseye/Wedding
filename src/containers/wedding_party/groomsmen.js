@@ -33,7 +33,7 @@ export default class Groomsmen extends Component {
 	}
 }
 
-const blurbJohn = "John is Mark's older brother and best man. He's fiercely competitive, but also loyal. He's always had Mark's back, even after many fights over who was better at football, baseball or pretty much any other sport. He's still just as competitive, but likes to use most of his energy towards spending time with his two sons, Jordan and Leo, and his wife, Marilyn."
+const blurbJohn = "John is Mark's older brother and best man. He's fiercely competitive, but also loyal. He's always had Mark's back, even after many fights over who was better at football, baseball or pretty much any other sport. They both tease each other constantly, but know it is all out of love and laugh it off in the end. He's still just as competitive, but likes to use most of his energy towards spending time with his two sons, Jordan and Leo, and his wife, Marilyn. John is more of the 'do-it-yourselfer' of the family, where Mark would much rather pay someone for a task, or just call John for help. In typical John fashion, he would initially jokingly say no, but when push came to shove, he would always go out of his way to help Mark out."
 
 const John = { title: "Best Man",
 							 name: "John Ioannidis",
