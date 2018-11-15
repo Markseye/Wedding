@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Dropdown extends Component {
   render() {
     return (
-      <div className="dropdown">
+      <div>
       	<div><a>X</a></div>
       	{dropLinks}
       </div>
