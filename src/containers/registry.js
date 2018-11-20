@@ -10,11 +10,10 @@ export default class Registry extends Component {
 			<div className="App">
 				<Hamburger />
 				<div className="registry">
-					<div className="registry-splash-name registry-title">Coming Soon!</div>
-						<ul className="registry-items">
-						<li><img alt="cnb" className="circle registry-circle" src={cnb} /></li>
-						<li><img alt="bbb" className="circle registry-circle" src={bbb} /></li>
-						</ul>
+					<ul className="registry-items">
+					<li><a href="https://www.crateandbarrel.com/gift-registry/mark-ioannidis-and-katherine-hyde/r5904967"><img alt="cnb" className="circle registry-circle" src={cnb} /></a></li>
+					<li><a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546730347"><img alt="bbb" className="circle registry-circle" src={bbb} /></a></li>
+					</ul>
 				</div>
 			</div>
 		)
