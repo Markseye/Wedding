@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Groomsmen from './wedding_party/groomsmen';
 import Bridesmaids from './wedding_party/bridesmaids';
 import Hamburger from './hamburger';
+import Officiant from './wedding_party/officiant';
 
 export default class Party extends Component {
 
@@ -12,6 +13,7 @@ export default class Party extends Component {
       	<div className="party-container">
         	<Bridesmaids />
         	<Groomsmen />
+          <Officiant />
       	</div>
       </div>
     );
