@@ -76,5 +76,9 @@ const additionalDetails = <div className="details-expanded"wrap="virtual"><b>
                           <ul><u>Transportation</u>
                           <li>There will be shuttles running from The Desmond Hotel to the ceremony location
                           and back after the reception ends. Times are TBD.</li>
+                          </ul>
+                          <ul><u>Additional Information</u>
+                          <li>The John James Audubon Center at Mill Grove is located at 1201 Pawlings Road in Audubon, PA at the intersection of Audubon Road and Pawlings Road at the traffic light. Some GPS systems do not recognize Audubon as a town; if this is the case with your GPS, please use Norristown instead of Audubon.<br/><br/>
+                          We are also (weather permitting) planning to have our ceremony and cocktail hour outside on the grass. Please keep this in mind when choosing your shoes for the evening. </li>
                           </ul></b>
                           </div>;
