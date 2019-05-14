@@ -70,11 +70,15 @@ const additionalDetails = <div className="details-expanded"wrap="virtual"><b>
                           <li>Malvern, PA</li>
                           </ul>
                           <ul><u>After Party</u>
-                          <li>Location: The Deck at The Desmond</li>
-                          <li>Time: After the reception</li>
+                          <li>Location: The Deck at the Desmond</li>
+                          <li>Time: 11:30 PM - 1:30 AM</li>
+                          </ul>
+                          <ul><u>Morning-After Brunch</u>
+                          <li>Location: The Desmond Hotel</li>
+                          <li>Time: 9:00 AM - 11:00 AM</li>
                           </ul>
                           <ul><u>Transportation</u>
-                          <li>There will be shuttles running from The Desmond Hotel to the ceremony location
+                          <li>There will be shuttles running from the Desmond Hotel to the ceremony location
                           and back after the reception ends. Times are TBD.</li>
                           </ul>
                           <ul><u>Additional Information</u>
